@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.2)),  url(./OIP.webp);
+    background-size: cover;
+    background-position:center ;
+    position: relative;
+    color: white;
+    
+}
+/* .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:rgba(0,0,0,0.9); */
+
+/* } */
+nav{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo{
+    font-size: 2.5em;
+    color: orange;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    
+    
+    
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 16px;
+}
+.menu a:first-child{
+    color: orange;
+    border-top:1px solid orange;
+    border-radius: 8px;
+}
+.menu a:last-child{
+    color: orange;
+    border-top:1px solid orange;
+    border-radius: 8px;
+}
+
+.menu i{
+    font-size: 25px;
+    padding: 0 2px;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position:absolute;
+    z-index: 2;
+}
+.left{
+    flex-basis:45%;
+}
+.right{
+    flex-basis:35%;
+}
+
+.right img{
+    width: 100%;
+    border-radius: 300px;
+    filter: drop-shadow(10px 10px 20px rgb(167, 0, 0));
+    animation: 10s anim infinite linear;
+}
+.left h1{
+    font-size: 5em;
+}
+#del{
+    color: orange;
+}
+.left p{
+    margin: 15px 0;
+    line-height: 1.9rem;
+}
+.left a{
+    text-decoration: none;
+    color: white;
+    background: orange;
+    padding: 10px 20px;
+    border-radius: 50% 0 50% 0;
+}
+
+@keyframes anim{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
